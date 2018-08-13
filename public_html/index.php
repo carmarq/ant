@@ -19,14 +19,17 @@
 				  integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
 				  crossorigin="anonymous"></script>
 
-		<title>unclelame</title>
+		<!--CSS Stylesheet-->
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+
+		<title>UncleLame</title>
 	</head>
 
 	<body>
 		<header> <!--NavBar-->
 			<div class="container nav-font">
 				<nav class="navbar navbar-expand-md navbar-light">
-					<a class="navbar-brand" id="navfont">babyboy</a>
+					<a class="navbar-brand" id="navfont">UncleLame</a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon nav-fon"></span>
 					</button>
@@ -34,10 +37,10 @@
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav ml-auto">
 							<li class="nav-item">
-								<a class="nav-link" href="https://soundcloud.com/godiscozy">Soundcloud<span class="sr-only">(current)</span></a>
+								<a class="nav-link" id="soundcloud" href="https://soundcloud.com/godiscozy">Soundcloud<span class="sr-only">(current)</span></a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="https://unclelame.tumblr.com/">Tumblr</a>
+								<a class="nav-link" id="tumblr" href="https://unclelame.tumblr.com/">Tumblr</a>
 							</li>
 						</ul>
 					</div>
@@ -45,7 +48,20 @@
 			</div>
 		</header>
 
-		<canvas id="canvas"> <!--Media Player--></canvas>
+		<div class="audio ant-audio-player">
+
+			<div class="loading">
+				<div class="spinner"></div>
+			</div>
+			<div class=play-pause-btn">
+				<svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 18 24">
+					<path fill="#566574" fill-rule="evenodd" d="M18 12LO 24V0" class="play-pause-icon"
+							id="playPause"/>
+				</svg>
+			</div>
+
+		</div>
+
 	</body>
 
 </html>

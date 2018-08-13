@@ -1,0 +1,21 @@
+/*corrects IE min-height bug*/
+html { display: flex;}
+body { width: 100%;}
+
+body {
+	background-color: black;
+	background-attachment: fixed;
+	font-size: 2rem;
+}
+
+#navfont {
+	color: white;
+}
+
+#soundcloud {
+	color: white;
+}
+
+#tumblr {
+	color: white;
+}
